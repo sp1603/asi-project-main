@@ -1,0 +1,8 @@
+CityFlow/
+venv/CityFlow/
+.venv/  
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+**/.DS_Store

@@ -1,0 +1,4 @@
+model,mean_total_reward,mean_final_waiting,mean_avg_waiting,mean_avg_travel_time
+dqn,-2965.6,153.0,71.07500000000002,60.233333333333334
+ppo,-3066.1,155.0,73.4,61.125
+a2c,-3675.9,208.0,90.17499999999998,65.06666666666665

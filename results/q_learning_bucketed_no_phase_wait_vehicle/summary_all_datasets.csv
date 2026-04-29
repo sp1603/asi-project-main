@@ -1,0 +1,4 @@
+dataset,method,total_reward,final_waiting,avg_waiting,final_avg_travel_time,num_decisions
+hangzhou_1x1_bc-tyc_18041607_1h,q_learning_bucketed_no_phase_wait_vehicle,-3018.3999999999996,77.0,16.95138888888889,92.47284345047923,144
+hangzhou_1x1_bc-tyc_18041608_1h,q_learning_bucketed_no_phase_wait_vehicle,-7943.4,102.0,46.541666666666664,148.59667359667358,144
+hangzhou_1x1_bc-tyc_18041610_1h,q_learning_bucketed_no_phase_wait_vehicle,-5558.3,45.0,31.958333333333332,124.1891891891892,144
