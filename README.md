@@ -74,15 +74,10 @@ git submodule update --init --recursive
 ```
 
 ```bash
-git clone https://github.com/cityflow-project/CityFlow.git
-cd CityFlow
-git submodule update --init --recursive
-
 sed -i.bak 's/cmake_minimum_required(VERSION 3.0)/cmake_minimum_required(VERSION 3.5)/' CMakeLists.txt
 sed -i.bak 's/cmake_minimum_required(VERSION 2.8.12)/cmake_minimum_required(VERSION 3.5)/' extern/pybind11/CMakeLists.txt
 sed -i.bak 's/cmake_minimum_required(VERSION 2.8.12)/cmake_minimum_required(VERSION 3.5)/' extern/pybind11/tools/pybind11Tools.cmake
 
-rm -rf build dist *.egg-info
 CMAKE_ARGS="-DCMAKE_POLICY_VERSION_MINIMUM=3.5" pip install .
 ```
 
@@ -91,13 +86,6 @@ CMAKE_ARGS="-DCMAKE_POLICY_VERSION_MINIMUM=3.5" pip install .
 python -c "import cityflow; print('CityFlow installed successfully')"
 ```
 
-### 3. Add the Conda Environment to Jupyter
 
-```bash
-cd .. 
-python -m ipykernel install --user --name traffic-rl --display-name "traffic-rl"
-jupyter notebook
-```
-
-### 4. Go to Traffic_Signal_RL_Reproducibility.ipynb
-Run the cells in order in the notebook. The notebook installs/checks dependencies, runs the experiment scripts, and loads result files for comparison.
+### 3. Go to Traffic_Signal_RL_Reproducibility.ipynb
+Set your conda environment as the kernel in this notebook. If you don't see it as an option, close your editor and reopen it. Run the cells in order in the notebook. The notebook installs/checks dependencies, runs the experiment scripts, and loads result files for comparison.
