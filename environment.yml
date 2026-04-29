@@ -1,0 +1,24 @@
+name: traffic-rl
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.10
+  - pip
+  - cmake
+  - make
+  - git
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - jupyter
+  - notebook
+  - ipykernel
+  - tqdm
+  - pip:
+      - gymnasium
+      - stable-baselines3
+      - torch
+      
