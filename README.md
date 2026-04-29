@@ -65,7 +65,7 @@ conda env create -f environment.yml
 conda activate traffic-rl
 ```
 
-### 2. install CityFlow
+### 2. Install CityFlow
 
 ```bash
 git clone https://github.com/cityflow-project/CityFlow.git
